@@ -1,13 +1,20 @@
 package com.example.madgroupproject;
 
+import android.content.Context;
 import android.content.Intent;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.CardView;
 import android.view.View;
+import android.widget.Toast;
+
+import java.security.KeyStore;
+import java.util.function.LongBinaryOperator;
 
 public class MainMenu extends AppCompatActivity  implements View.OnClickListener{
 
+    private boolean exit = false;
     public CardView inventory,warehouse,suppliers,settings;
 
     @Override
@@ -26,13 +33,10 @@ public class MainMenu extends AppCompatActivity  implements View.OnClickListener
         inventory.setOnClickListener(this);
         warehouse.setOnClickListener(this);
 
-
     }
 
     @Override
     public void onClick(View v) {
-
-
         Intent i;
         switch (v.getId()){
 
@@ -45,8 +49,28 @@ public class MainMenu extends AppCompatActivity  implements View.OnClickListener
                 i = new Intent(this,WareHouse.class);
                 startActivity(i);
                 break;
-
         }
+    }
+
+
+    //press back double exit
+    @Override
+    public void onBackPressed() {
+
+        if (exit ){
+            super.onBackPressed();
+            return;
+        }
+
+        exit = true;
+        Toast.makeText(this, "Press back again to exit", Toast.LENGTH_SHORT).show();
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                exit = false;
+            }
+        }, 1000);
+
 
     }
 }

@@ -10,21 +10,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MADGroupProject">
         <activity
-            android:name=".WareHouse"
-            android:exported="true"
-            android:parentActivityName=".MainMenu"/>
-
-        <activity
             android:name=".Inventory"
             android:exported="true"
             android:parentActivityName=".MainMenu"/>
-
+        <activity
+            android:name=".WareHouse"
+            android:exported="true"
+            android:parentActivityName=".MainMenu" />
         <activity
             android:name=".MainMenu"
             android:exported="true" />
-
         <activity
-
             android:name=".SplashScreen"
             android:exported="true">
             <intent-filter>
@@ -32,9 +28,7 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
-
     </application>
 
 </manifest>
