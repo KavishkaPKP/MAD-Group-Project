@@ -11,7 +11,8 @@
         android:theme="@style/Theme.MADGroupProject" >
         <activity
             android:name=".Inventory"
-            android:exported="true" />
+            android:exported="true"
+            android:parentActivityName=".MainMenu"/>
         <activity
             android:name=".WareHouse"
             android:exported="true"
