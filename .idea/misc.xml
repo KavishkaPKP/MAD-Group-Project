@@ -4,12 +4,16 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/MADGroupProject/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.14583333333333334" />
-        <entry key="..\:/MADGroupProject/app/src/main/res/layout/activity_inventory.xml" value="0.2" />
+        <entry key="..\:/MADGroupProject/app/src/main/res/layout/activity_inventory.xml" value="0.176" />
         <entry key="..\:/MADGroupProject/app/src/main/res/layout/activity_main_menu.xml" value="0.2" />
         <entry key="..\:/MADGroupProject/app/src/main/res/layout/activity_splash_screen.xml" value="0.1793478260869565" />
         <entry key="..\:/MADGroupProject/app/src/main/res/layout/activity_ware_house.xml" value="0.1793478260869565" />
         <entry key="..\:/MADGroupProject/app/src/main/res/layout/fragment_edit_details.xml" value="0.259375" />
+        <entry key="..\:/MADGroupProject/app/src/main/res/layout/fragment_edit_stock.xml" value="0.259375" />
+        <entry key="..\:/MADGroupProject/app/src/main/res/layout/fragment_frag_inventory.xml" value="0.259375" />
         <entry key="..\:/MADGroupProject/app/src/main/res/layout/fragment_inventorry.xml" value="0.259375" />
+        <entry key="..\:/MADGroupProject/app/src/main/res/layout/fragment_inventory.xml" value="0.259375" />
+        <entry key="..\:/MADGroupProject/app/src/main/res/layout/fragment_new_stock.xml" value="0.259375" />
         <entry key="..\:/MADGroupProject/app/src/main/res/layout/fragment_new_stocks.xml" value="0.259375" />
         <entry key="..\:/MADGroupProject/app/src/main/res/layout/fragment_stocks.xml" value="0.259375" />
         <entry key="..\:/MADGroupProject/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.14947916666666666" />
