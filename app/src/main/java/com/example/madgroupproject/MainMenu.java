@@ -1,16 +1,12 @@
 package com.example.madgroupproject;
 
-import android.content.Context;
 import android.content.Intent;
+import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.support.v7.widget.CardView;
 import android.view.View;
 import android.widget.Toast;
-
-import java.security.KeyStore;
-import java.util.function.LongBinaryOperator;
 
 public class MainMenu extends AppCompatActivity  implements View.OnClickListener{
 
