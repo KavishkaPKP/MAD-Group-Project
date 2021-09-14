@@ -3,12 +3,13 @@ package com.example.madgroupproject;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.CardView;
 import android.view.View;
 import android.widget.Toast;
 
-public class MainMenu extends AppCompatActivity  implements View.OnClickListener{
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
+
+public class MainMenu extends AppCompatActivity implements View.OnClickListener{
 
     private boolean exit = false;
     public CardView inventory,warehouse,suppliers,settings;
