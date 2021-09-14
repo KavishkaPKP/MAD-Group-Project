@@ -10,11 +10,17 @@
         <entry key="..\:/MADGroupProject/app/src/main/res/layout/activity_ware_house.xml" value="0.1793478260869565" />
         <entry key="..\:/MADGroupProject/app/src/main/res/layout/fragment_edit_details.xml" value="0.259375" />
         <entry key="..\:/MADGroupProject/app/src/main/res/layout/fragment_edit_stock.xml" value="0.259375" />
+        <entry key="..\:/MADGroupProject/app/src/main/res/layout/fragment_editstock.xml" value="0.13385416666666666" />
+        <entry key="..\:/MADGroupProject/app/src/main/res/layout/fragment_f_g_edit_stock.xml" value="0.259375" />
+        <entry key="..\:/MADGroupProject/app/src/main/res/layout/fragment_f_g_newstock.xml" value="0.259375" />
+        <entry key="..\:/MADGroupProject/app/src/main/res/layout/fragment_f_g_stock.xml" value="0.259375" />
         <entry key="..\:/MADGroupProject/app/src/main/res/layout/fragment_frag_inventory.xml" value="0.259375" />
         <entry key="..\:/MADGroupProject/app/src/main/res/layout/fragment_inventorry.xml" value="0.259375" />
         <entry key="..\:/MADGroupProject/app/src/main/res/layout/fragment_inventory.xml" value="0.259375" />
         <entry key="..\:/MADGroupProject/app/src/main/res/layout/fragment_new_stock.xml" value="0.259375" />
         <entry key="..\:/MADGroupProject/app/src/main/res/layout/fragment_new_stocks.xml" value="0.259375" />
+        <entry key="..\:/MADGroupProject/app/src/main/res/layout/fragment_newstock.xml" value="0.11979166666666667" />
+        <entry key="..\:/MADGroupProject/app/src/main/res/layout/fragment_stock.xml" value="0.259375" />
         <entry key="..\:/MADGroupProject/app/src/main/res/layout/fragment_stocks.xml" value="0.259375" />
         <entry key="..\:/MADGroupProject/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.14947916666666666" />
         <entry key="..\:/MADGroupProject/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.15" />
