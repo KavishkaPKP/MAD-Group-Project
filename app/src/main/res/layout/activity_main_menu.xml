@@ -19,10 +19,10 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="© 2021 Copyright DPI Warehouse Network"
+            android:text="@string/_2021_copyright_dpi_warehouse_network"
             android:textColor="@color/white"
-            android:textSize="14dp"
-            android:textStyle="bold"></TextView>
+            android:textSize="14sp"
+            android:textStyle="bold" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -40,7 +40,8 @@
             android:columnCount="2"
             android:columnOrderPreserved="false"
             android:padding="14dp"
-            android:rowCount="2">
+            android:rowCount="2"
+            tools:ignore="ExtraText">
 
             //card view design
 
@@ -51,7 +52,6 @@
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:layout_marginEnd="16dp"
-                android:layout_marginRight="16dp"
                 android:layout_marginBottom="16dp"
                 app:cardCornerRadius="8dp"
                 app:cardElevation="8dp">
@@ -66,17 +66,17 @@
 
                     <ImageView
                         android:layout_width="70dp"
-                        android:layout_height="70dp"
+                        android:layout_height="0dp"
                         android:layout_weight="8"
-                        android:src="@drawable/inventory"></ImageView>
+                        android:src="@drawable/inventory" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="Inventory"
+                        android:text="@string/inventory"
                         android:textAlignment="center"
                         android:textColor="#000000"
-                        android:textSize="12dp"></TextView>
+                        android:textSize="12sp" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -87,7 +87,6 @@
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:layout_marginEnd="16dp"
-                android:layout_marginRight="16dp"
                 android:layout_marginBottom="16dp"
                 app:cardCornerRadius="8dp"
                 app:cardElevation="8dp">
@@ -102,17 +101,19 @@
 
                     <ImageView
                         android:layout_width="70dp"
-                        android:layout_height="70dp"
+                        android:layout_height="0dp"
                         android:layout_weight="8"
-                        android:src="@drawable/warehouse"></ImageView>
+
+                        android:src="@drawable/warehouse"
+                        tools:ignore="ImageContrastCheck" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="WareHouse"
+                        android:text="@string/warehouse"
                         android:textAlignment="center"
                         android:textColor="#000000"
-                        android:textSize="12dp">
+                        android:textSize="12sp">
 
                     </TextView>
                 </LinearLayout>
@@ -125,7 +126,6 @@
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:layout_marginEnd="16dp"
-                android:layout_marginRight="16dp"
                 android:layout_marginBottom="16dp"
                 app:cardCornerRadius="8dp"
                 app:cardElevation="8dp">
@@ -140,17 +140,17 @@
 
                     <ImageView
                         android:layout_width="70dp"
-                        android:layout_height="70dp"
+                        android:layout_height="0dp"
                         android:layout_weight="8"
-                        android:src="@drawable/supplier"></ImageView>
+                        android:src="@drawable/supplier"/>
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="Supplier"
+                        android:text="@string/supplier"
                         android:textAlignment="center"
                         android:textColor="#000000"
-                        android:textSize="12dp"></TextView>
+                        android:textSize="12sp" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -161,7 +161,6 @@
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:layout_marginEnd="16dp"
-                android:layout_marginRight="16dp"
                 android:layout_marginBottom="16dp"
                 app:cardCornerRadius="8dp"
                 app:cardElevation="8dp">
@@ -176,17 +175,19 @@
 
                     <ImageView
                         android:layout_width="70dp"
-                        android:layout_height="70dp"
+                        android:layout_height="0dp"
                         android:layout_weight="8"
-                        android:src="@drawable/settings"></ImageView>
+                        android:src="@drawable/settings"
+                        tools:ignore="ImageContrastCheck"
+                         />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="Settings"
+                        android:text="@string/settings"
                         android:textAlignment="center"
                         android:textColor="#000000"
-                        android:textSize="12dp">
+                        android:textSize="12sp">
 
                     </TextView>
                 </LinearLayout>

@@ -5,4 +5,13 @@
     <string name="new_inventory_fragment">New Inventory Fragment</string>
     <string name="edit_inventory_fragment">Edit Inventory Fragment</string>
     <string name="inventory_fragment">Inventory Fragment</string>
+    <string name="warehouse">WareHouse</string>
+    <string name="inventory">Inventory</string>
+    <string name="supplier">Supplier</string>
+    <string name="_2021_copyright_dpi_warehouse_network">© 2021 Copyright DPI Warehouse Network</string>
+    <string name="settings">Settings</string>
+    <string name="todo1">TODO</string>
+    <string name="todo2">TODO</string>
+    <string name="todo3">TODO</string>
+    <string name="todo4">TODO</string>
 </resources>
