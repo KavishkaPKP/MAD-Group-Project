@@ -4,7 +4,7 @@
         <!-- Primary brand color. -->
         <item name="colorPrimary">#0ba0db</item>
         <item name="colorPrimaryDark">#0ba0db</item>
-        <item name="colorAccent">@color/teal_200</item>
+        <item name="colorAccent">#0ba0db</item>
         <!-- Customize your theme here. -->
     </style>
 </resources>

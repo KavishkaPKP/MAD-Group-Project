@@ -10,12 +10,13 @@
         android:id="@+id/invent_tabLayout"
         android:layout_width="409dp"
         android:layout_height="wrap_content"
+        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:tabIndicatorColor="#0ba0db"
         app:tabTextColor="#0ba0db"
-        android:textAlignment="center">
+        tools:ignore="SpeakableTextPresentCheck">
 
     </com.google.android.material.tabs.TabLayout>
 
