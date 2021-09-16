@@ -25,16 +25,15 @@ public class Inventory extends AppCompatActivity {
         adapter = new FragmentAdapter(fm,getLifecycle());
         pager2.setAdapter(adapter);
 
-        tabLayout.addTab(tabLayout.newTab().setText("Stock"));
-        tabLayout.addTab(tabLayout.newTab().setText("New Stock"));
-        tabLayout.addTab(tabLayout.newTab().setText("Edit Stock"));
+        tabLayout.addTab(tabLayout.newTab().setText("Stocks"));
+        tabLayout.addTab(tabLayout.newTab().setText("New Stocks"));
+
 
         tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
 
                 pager2.setCurrentItem(tab.getPosition());
-
 
             }
 
@@ -47,6 +46,7 @@ public class Inventory extends AppCompatActivity {
             public void onTabReselected(TabLayout.Tab tab) {
 
             }
+
         });
 
         pager2.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {

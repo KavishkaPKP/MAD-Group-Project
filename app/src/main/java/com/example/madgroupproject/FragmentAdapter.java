@@ -16,10 +16,8 @@ public class FragmentAdapter extends FragmentStateAdapter {
     public Fragment createFragment(int position) {
         switch (position){
 
-            case 1:
-                return new NewstockFragment();
             case 2:
-                return new EditstockFragment();
+                return new NewstockFragment();
         }
 
         return new StocksFragment();
@@ -27,6 +25,6 @@ public class FragmentAdapter extends FragmentStateAdapter {
 
     @Override
     public int getItemCount() {
-        return 3;
+        return 2;
     }
 }
