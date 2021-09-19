@@ -1,10 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:fillViewport="true"
+    android:orientation="vertical"
     tools:ignore="SpeakableTextPresentCheck">
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <EditText
+        android:id="@+id/txtSerialNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:hint="@string/inventory_serial"
+        tools:ignore="TouchTargetSizeCheck" />
+    <EditText
+        android:id="@+id/txtStockOwner"
+        android:layout_below="@+id/txtSerialNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:hint="@string/stock_owner"
+        tools:ignore="TouchTargetSizeCheck" />
+    <EditText
+        android:id="@+id/txtWarehouseLocation"
+        android:layout_below="@+id/txtStockOwner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:hint="@string/txtWarehouseLocation"
+        tools:ignore="TouchTargetSizeCheck" />
+    <EditText
+        android:id="@+id/txtInsideStock"
+        android:layout_below="@+id/txtWarehouseLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:hint="@string/txtInsideStock"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/btnAddItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtInsideStock"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="30dp"
+        android:background="#38a9d9"
+        android:text="@string/btnAddToStock"
+        android:textColor="#311B92" />
+
+
+</RelativeLayout>

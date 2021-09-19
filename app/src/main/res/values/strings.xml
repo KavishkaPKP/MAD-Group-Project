@@ -16,4 +16,7 @@
     <string name="inventory_serial">Enter Serial Number</string>
     <string name="stock_owner">Stock_owner</string>
     <string name="stock_date">Stock Date</string>
+    <string name="btnAddToStock">Add to Stock</string>
+    <string name="txtWarehouseLocation">Warehouse Location</string>
+    <string name="txtInsideStock">Inside Stock</string>
 </resources>
