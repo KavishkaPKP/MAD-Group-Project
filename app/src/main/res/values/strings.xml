@@ -14,7 +14,7 @@
     <string name="todo3">TODO</string>
     <string name="todo4">TODO</string>
     <string name="inventory_serial">Enter Serial Number</string>
-    <string name="stock_owner">Stock_owner</string>
+    <string name="stock_owner">Stock Owner</string>
     <string name="stock_date">Stock Date</string>
     <string name="btnAddToStock">Add to Stock</string>
     <string name="txtWarehouseLocation">Warehouse Location</string>
