@@ -1,40 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:fillViewport="true"
+    tools:context=".NewstockFragment"
     tools:ignore="SpeakableTextPresentCheck">
 
-    <RelativeLayout
-        android:orientation="vertical"
+    <TextView
+        android:id="@+id/txtTitle1"
+        android:gravity="center"
+        android:textSize="@dimen/titleSize"
+        android:textColor="@color/txtViewColore"
+        android:textStyle="bold"
         android:layout_width="match_parent"
-        android:layout_height="720dp"
-        tools:context=".NewstockFragment"
-        tools:ignore="SpeakableTextPresentCheck">
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/titleTop"
+        android:layout_centerHorizontal="true"
+        android:text="@string/txtnewstocktitle">
 
+    </TextView>
 
-        <ImageView
-            android:id="@+id/imgstock"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="30dp"
-            android:contentDescription="TODO"
-            tools:ignore="ImageContrastCheck"
-            tools:srcCompat="@tools:sample/avatars"
-            tools:visibility="visible" />
+    <ImageView
+        android:id="@+id/imgstock"
+        android:layout_below="@+id/txtTitle1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:contentDescription="TODO"
+        tools:ignore="ImageContrastCheck"
+        tools:srcCompat="@tools:sample/avatars"
+        tools:visibility="visible" />
 
         <EditText
             android:id="@+id/txtSerialNumber"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/imgstock"
-            android:layout_marginLeft="15dp"
+            android:layout_marginLeft="@dimen/txtmarginLeftsize"
             android:layout_marginTop="20dp"
-            android:layout_marginRight="15dp"
+            android:layout_marginRight="@dimen/txtmarginRightsize"
             android:hint="@string/inventory_serial"
             tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
 
@@ -71,24 +79,17 @@
             android:hint="@string/txtInsideStock"
             tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
 
-        <Button
-            android:id="@+id/btnAddItem"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/txtInsideStock"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="15dp"
-            android:background="#38a9d9"
-            android:text="@string/btnAddToStock"
-            android:textColor="#FFF"
-            tools:ignore="TextContrastCheck" />
-
-
+    <Button
+        android:id="@+id/btnAddItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtInsideStock"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/btnColor"
+        android:text="@string/btnAddToStock"
+        android:textColor="#FFF"
+        tools:ignore="TextContrastCheck" />
 
     </RelativeLayout>
-
-
-
-
-</ScrollView>

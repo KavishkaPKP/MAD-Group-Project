@@ -19,4 +19,5 @@
     <string name="btnAddToStock">Add to Stock</string>
     <string name="txtWarehouseLocation">Warehouse Location</string>
     <string name="txtInsideStock">Inside Stock</string>
+    <string name="txtnewstocktitle">Add New Items</string>
 </resources>
