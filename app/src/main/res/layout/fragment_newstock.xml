@@ -1,25 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:fillViewport="true"
-    tools:context=".NewstockFragment"
     tools:ignore="SpeakableTextPresentCheck">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".NewstockFragment">
+
 
     <TextView
         android:id="@+id/txtTitle1"
-        android:gravity="center"
-        android:textSize="@dimen/titleSize"
-        android:textColor="@color/txtViewColore"
-        android:textStyle="bold"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="@dimen/titleTop"
         android:layout_centerHorizontal="true"
-        android:text="@string/txtnewstocktitle">
+        android:layout_marginTop="@dimen/titleTop"
+        android:gravity="center"
+        android:text="@string/txtnewstocktitle"
+        android:textColor="@color/txtViewColore"
+        android:textSize="@dimen/titleSize"
+        android:textStyle="bold">
 
     </TextView>
 
@@ -79,11 +86,23 @@
             android:hint="@string/txtInsideStock"
             tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
 
+    <EditText
+        android:id="@+id/txtDiliverDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtInsideStock"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:hint="@string/txtdilivery_date"
+        android:inputType="date"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
     <Button
         android:id="@+id/btnAddItem"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/txtInsideStock"
+        android:layout_below="@+id/txtDiliverDate"
         android:layout_marginLeft="15dp"
         android:layout_marginTop="10dp"
         android:layout_marginRight="15dp"
@@ -93,3 +112,4 @@
         tools:ignore="TextContrastCheck" />
 
     </RelativeLayout>
+</ScrollView>

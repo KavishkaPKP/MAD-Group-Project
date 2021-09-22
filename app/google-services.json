@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "926284532981",
-    "project_id": "madgroupproject-47bb7",
-    "storage_bucket": "madgroupproject-47bb7.appspot.com"
+    "project_number": "519959644914",
+    "project_id": "madgroupproject-130d0",
+    "storage_bucket": "madgroupproject-130d0.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:926284532981:android:2ac6f3dfa33129a69f49bc",
+        "mobilesdk_app_id": "1:519959644914:android:f423ef750404782f83de6b",
         "android_client_info": {
           "package_name": "com.example.madgroupproject"
         }
       },
       "oauth_client": [
         {
-          "client_id": "926284532981-1fh51cq24b5lma6hsdhdj5k9lavhimnr.apps.googleusercontent.com",
+          "client_id": "519959644914-dk65svvg8476fna570itcp65uiko580u.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAxmf18BciDrS7f3nmn2lHPnJGoaaMkluk"
+          "current_key": "AIzaSyCMGajpgxp_cAY82lx2FbIH7rG45taT7No"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "926284532981-1fh51cq24b5lma6hsdhdj5k9lavhimnr.apps.googleusercontent.com",
+              "client_id": "519959644914-dk65svvg8476fna570itcp65uiko580u.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
