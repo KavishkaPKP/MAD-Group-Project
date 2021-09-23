@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -14,7 +15,9 @@
             android:layout_width="96dp"
             android:layout_height="96dp"
             android:src="@drawable/w"
-            android:padding="5dp"/>
+            android:padding="5dp"
+            android:contentDescription="TODO"
+            tools:ignore="ContentDescription" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -24,14 +27,14 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Inside Stock"
+                android:text="@string/txtInsideStock"
                 android:textSize="20sp"
                 android:layout_margin="5dp"
                 android:id="@+id/txtRetInside"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Wahrehouse Location"
+                android:text="@string/txtWarehouseLocation"
                 android:textSize="20sp"
                 android:layout_margin="5dp"
                 android:id="@+id/txtRetWarehouseLocation"/>

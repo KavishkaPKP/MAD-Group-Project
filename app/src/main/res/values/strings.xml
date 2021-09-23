@@ -22,4 +22,5 @@
     <string name="txtnewstocktitle">Add New Items</string>
     <string name="txtprice">Price</string>
     <string name="txtquantity">Quantity</string>
+
 </resources>
