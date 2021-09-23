@@ -1,32 +1,34 @@
 package com.example.madgroupproject;
 
-import java.util.Date;
-
 public class Stocks {
 
-    private int serialNumber;
+    private String serialNumber;
     private String StockOwner;
     private String WarehouseLocation;
     private String InsideStock;
-    private Date DiliverDate;
+    private String Price;
+    private String Quantity;
 
-    public Stocks(String s1, String stockOwner, String string, String s, String toString){
+
+    public Stocks(){
 
     }
 
-    public Stocks(int serialNumber, String stockOwner, String warehouseLocation, String insideStock, Date diliverDate) {
+    public Stocks(String serialNumber, String stockOwner, String warehouseLocation, String insideStock, String price, String quantity) {
         this.serialNumber = serialNumber;
         StockOwner = stockOwner;
         WarehouseLocation = warehouseLocation;
         InsideStock = insideStock;
-        DiliverDate = diliverDate;
+        Price = price;
+        Quantity = quantity;
+
     }
 
-    public int getSerialNumber() {
+    public String getSerialNumber() {
         return serialNumber;
     }
 
-    public void setSerialNumber(int serialNumber) {
+    public void setSerialNumber(String serialNumber) {
         this.serialNumber = serialNumber;
     }
 
@@ -54,11 +56,19 @@ public class Stocks {
         InsideStock = insideStock;
     }
 
-    public Date getDiliverDate() {
-        return DiliverDate;
+    public String getPrice() {
+        return Price;
     }
 
-    public void setDiliverDate(Date diliverDate) {
-        DiliverDate = diliverDate;
+    public void setPrice(String price) {
+        Price = price;
+    }
+
+    public String getQuantity() {
+        return Quantity;
+    }
+
+    public void setQuantity(String quantity) {
+        Quantity = quantity;
     }
 }

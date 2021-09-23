@@ -1,5 +1,6 @@
 package com.example.madgroupproject;
 
+import android.content.Context;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -11,10 +12,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageView;
 import android.widget.Toast;
 
-import com.google.android.material.textfield.TextInputEditText;
+import java.util.HashMap;
 
 
 public class  NewstockFragment extends Fragment {
@@ -29,27 +29,27 @@ public class  NewstockFragment extends Fragment {
         final EditText  StockOwner = v.findViewById(R.id.txtStockOwner);
         final EditText  WarehouseLocation = v.findViewById(R.id.txtWarehouseLocation);
         final EditText  InsideStock= v.findViewById(R.id.txtInsideStock);
-        final EditText  DiliverDate = v.findViewById(R.id.txtDiliverDate);
+        final EditText  Price= v.findViewById(R.id.txtPrice);
+        final EditText  Quantity= v.findViewById(R.id.txtQuantity);
+        Button btn = v.findViewById(R.id.btnAddItem);
         DAOStocks dao = new DAOStocks();
 
-        Button btn = v.findViewById(R.id.btnAddItem);
-        btn.setOnClickListener(b->{
+        btn.setOnClickListener(b-> {
 
-            Stocks st = new Stocks(serialNumber.getText().toString(),StockOwner.getText().toString(),WarehouseLocation.getText().toString(),InsideStock.getText().toString(),DiliverDate.getText().toString());
-            dao.add(st).addOnSuccessListener(V-> {
+//            Add data to the Database
 
-                Toast.makeText(this,"Items added Successfully!", Toast.LENGTH_SHORT).show();
 
-            }).addOnFailureListener(er->{
+            Stocks st = new Stocks(serialNumber.getText().toString(), StockOwner.getText().toString(), WarehouseLocation.getText().toString(), InsideStock.getText().toString(), Price.getText().toString(), Quantity.getText().toString());
+            dao.add(st).addOnSuccessListener(V -> {
 
-                Toast.makeText(this,""+er.getMessage(), Toast.LENGTH_SHORT).show();
-
+                Toast.makeText(this.getContext(), "Add To Recode Successfully", Toast.LENGTH_SHORT).show();
+            }).addOnFailureListener(er -> {
+                Toast.makeText(this.getContext(), "Faild-" + er.getMessage(), Toast.LENGTH_SHORT).show();
             });
 
         });
 
+
         return v;
-
-
     }
 }

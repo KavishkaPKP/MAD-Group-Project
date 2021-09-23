@@ -16,8 +16,6 @@ public class FragmentAdapter extends FragmentStateAdapter {
     public Fragment createFragment(int position) {
         switch (position){
 
-            case 0:
-                return new StocksFragment();
             case 1:
                 return new NewstockFragment();
         }

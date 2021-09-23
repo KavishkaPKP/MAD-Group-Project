@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,14 +8,21 @@
     android:fillViewport="true"
     tools:ignore="SpeakableTextPresentCheck">
 
-    <RelativeLayout
-
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
         android:layout_width="match_parent"
-        android:layout_height="720dp"
-        android:orientation="vertical"
-        tools:context=".StocksFragment"
-        tools:ignore="SpeakableTextPresentCheck">
+        android:layout_height="match_parent"
+        android:id="@+id/Stockswip">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rvStock"/>
 
 
-    </RelativeLayout>
-</ScrollView>
+
+
+
+
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</LinearLayout>

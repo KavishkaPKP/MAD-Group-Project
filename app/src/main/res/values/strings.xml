@@ -20,5 +20,6 @@
     <string name="txtWarehouseLocation">Warehouse Location</string>
     <string name="txtInsideStock">Inside Stock</string>
     <string name="txtnewstocktitle">Add New Items</string>
-    <string name="txtdilivery_date">YYYY/MM/DD</string>
+    <string name="txtprice">Price</string>
+    <string name="txtquantity">Quantity</string>
 </resources>
