@@ -1,48 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_margin="2dp">
-    
-    <LinearLayout
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="6dp"
+    android:elevation="6dp"
+    app:cardUseCompatPadding="true"
+    android:fillViewport="true">
+
+
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:padding="15dp">
 
         <ImageView
-            android:layout_width="96dp"
-            android:layout_height="96dp"
-            android:src="@drawable/w"
-            android:padding="5dp"
-            android:contentDescription="TODO"
-            tools:ignore="ContentDescription" />
+            android:id="@+id/imgStableImage"
+            android:layout_width="77dp"
+            android:layout_height="59dp"
 
-        <LinearLayout
+            android:src="@drawable/w" />
+
+        <TextView
+            android:id="@+id/teStockOwner"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_toRightOf="@+id/imgStableImage"
+            android:text="@string/stock_owner"
+            android:textColor="@color/txtViewColore"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:id="@+id/teWarehouseLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/teStockOwner"
+            android:layout_toRightOf="@+id/imgStableImage"
+            android:text="@string/txtWarehouseLocation"
+            android:textColor="@color/txtViewColore"
+            android:textSize="19dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"/>
 
-            <TextView
-                android:layout_width="match_parent"
+        <LinearLayout
+            android:layout_below="@id/teWarehouseLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnStockEdit"
+                android:layout_width="173dp"
                 android:layout_height="wrap_content"
-                android:text="@string/txtInsideStock"
-                android:textSize="20sp"
-                android:layout_margin="5dp"
-                android:id="@+id/txtRetInside"/>
-            <TextView
-                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/btnColor"
+                android:text="Edit"
+                android:textAllCaps="false"
+                android:textColor="#311B92" />
+
+            <Button
+                android:id="@+id/btnStockRemove"
+                android:layout_width="173dp"
                 android:layout_height="wrap_content"
-                android:text="@string/txtWarehouseLocation"
-                android:textSize="20sp"
-                android:layout_margin="5dp"
-                android:id="@+id/txtRetWarehouseLocation"/>
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/btnColor"
+                android:text="Remove"
+                android:textAllCaps="false"
+                android:textColor="#311B92" />
 
         </LinearLayout>
-
-
-
-
-    </LinearLayout>
+    </RelativeLayout>
 </androidx.cardview.widget.CardView>

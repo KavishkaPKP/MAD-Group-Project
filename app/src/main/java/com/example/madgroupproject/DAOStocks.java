@@ -17,28 +17,8 @@ public class DAOStocks {
         databaseReference = db.getReference(Stocks.class.getSimpleName());
     }
 
-//    Add method(throw data to database)
+    //    Add method(throw data to database)
     public Task<Void> add(Stocks st){
         return databaseReference.push().setValue(st);
     }
-
-    //    Update method(update data to database)
-    public Task<Void> update(String key, HashMap<String, Object> hashMap){
-        return databaseReference.child(key).updateChildren(hashMap);
-    }
-
-    //    Delete method(Delete data to database)
-
-    public Task<Void> Remove(String key){
-        return databaseReference.child(key).removeValue();
-    }
-
-    public Query get(){
-
-        return databaseReference.orderByKey();
-
-    }
-
-
-
 }

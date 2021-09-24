@@ -9,7 +9,6 @@
     android:background="@drawable/bg1"
     tools:context=".MainMenu">
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -187,4 +186,5 @@
             </androidx.cardview.widget.CardView>
         </GridLayout>
     </LinearLayout>
+
 </LinearLayout>

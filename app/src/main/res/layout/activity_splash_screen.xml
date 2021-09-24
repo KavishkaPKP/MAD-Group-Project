@@ -7,6 +7,7 @@
     tools:context=".SplashScreen">
 
 
+
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="match_parent"
@@ -26,5 +27,6 @@
         android:text="@string/_2021_copyright_dpi_warehouse_network"
         android:textColor="@color/black"
         android:textStyle="bold" />
+
 
 </RelativeLayout>

@@ -1,7 +1,6 @@
 package com.example.madgroupproject;
 
 public class Stocks {
-
     private String serialNumber;
     private String StockOwner;
     private String WarehouseLocation;
@@ -21,7 +20,6 @@ public class Stocks {
         InsideStock = insideStock;
         Price = price;
         Quantity = quantity;
-
     }
 
     public String getSerialNumber() {

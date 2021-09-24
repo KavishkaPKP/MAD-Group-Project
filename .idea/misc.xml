@@ -3,11 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Group Project Final/app/src/main/res/layout/activity_inventory.xml" value="0.12613981762917933" />
-        <entry key="..\:/Group Project Final/app/src/main/res/layout/activity_main_menu.xml" value="0.13768115942028986" />
-        <entry key="..\:/Group Project Final/app/src/main/res/layout/fragment_newstock.xml" value="0.264" />
-        <entry key="..\:/Group Project Final/app/src/main/res/layout/fragment_stocks.xml" value="0.13768115942028986" />
-        <entry key="..\:/Group Project Final/app/src/main/res/layout/retreve_item.xml" value="0.264" />
+        <entry key="..\:/mad/app/src/main/res/drawable/ic_launcher_background.xml" value="0.14583333333333334" />
+        <entry key="..\:/mad/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.14583333333333334" />
+        <entry key="..\:/mad/app/src/main/res/layout/activity_inventory.xml" value="0.1" />
+        <entry key="..\:/mad/app/src/main/res/layout/activity_main_menu.xml" value="0.24365942028985507" />
+        <entry key="..\:/mad/app/src/main/res/layout/activity_splash_screen.xml" value="0.1296875" />
+        <entry key="..\:/mad/app/src/main/res/layout/activity_ware_house.xml" value="0.24365942028985507" />
+        <entry key="..\:/mad/app/src/main/res/layout/fragment_newstock.xml" value="0.24365942028985507" />
+        <entry key="..\:/mad/app/src/main/res/layout/fragment_stocks.xml" value="0.24365942028985507" />
+        <entry key="..\:/mad/app/src/main/res/layout/retreve_item.xml" value="0.264" />
       </map>
     </option>
   </component>

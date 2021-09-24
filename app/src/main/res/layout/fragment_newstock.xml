@@ -2,9 +2,9 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:fillViewport="true"
-    tools:ignore="SpeakableTextPresentCheck">
+    tools:context=".NewstockFragment">
 
     <RelativeLayout
 
@@ -14,20 +14,20 @@
         tools:context=".NewstockFragment">
 
 
-    <TextView
-        android:id="@+id/txtTitle1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="@dimen/titleTop"
-        android:gravity="center"
-        android:text="@string/txtnewstocktitle"
-        android:textColor="@color/txtViewColore"
-        android:textSize="@dimen/titleSize"
-        android:textStyle="bold">
+        <TextView
+            android:id="@+id/txtTitle1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/titleTop"
+            android:gravity="center"
+            android:text="@string/txtnewstocktitle"
+            android:textColor="@color/txtViewColore"
+            android:textSize="@dimen/titleSize"
+            android:textStyle="bold">
 
-    </TextView>
+        </TextView>
 
 
         <EditText
@@ -74,16 +74,16 @@
             android:hint="@string/txtInsideStock"
             tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
 
-    <EditText
-        android:id="@+id/txtPrice"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/txtInsideStock"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="15dp"
-        android:hint="@string/txtprice"
-        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+        <EditText
+            android:id="@+id/txtPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtInsideStock"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:hint="@string/txtprice"
+            tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
 
         <EditText
             android:id="@+id/txtQuantity"
@@ -96,18 +96,19 @@
             android:hint="@string/txtquantity"
             tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
 
-    <Button
-        android:id="@+id/btnAddItem"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/txtQuantity"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginRight="15dp"
-        android:background="@color/btnColor"
-        android:text="@string/btnAddToStock"
-        android:textColor="#FFF"
-        tools:ignore="TextContrastCheck" />
+        <Button
+            android:id="@+id/btnAddItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtQuantity"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/btnColor"
+            android:text="@string/btnAddToStock"
+            android:textColor="#FFF"
+            tools:ignore="TextContrastCheck" />
 
     </RelativeLayout>
+
 </ScrollView>

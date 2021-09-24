@@ -56,6 +56,5 @@ public class Inventory extends AppCompatActivity {
             }
         });
 
-
     }
 }
