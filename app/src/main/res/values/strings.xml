@@ -22,5 +22,7 @@
     <string name="txtnewstocktitle">Add New Items</string>
     <string name="txtprice">Price</string>
     <string name="txtquantity">Quantity</string>
+    <string name="btnRetEdit">Edit</string>
+    <string name="btnRetRemove">Remove</string>
 
 </resources>

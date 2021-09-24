@@ -9,9 +9,6 @@ public class Stocks {
     private String Quantity;
 
 
-    public Stocks(){
-
-    }
 
     public Stocks(String serialNumber, String stockOwner, String warehouseLocation, String insideStock, String price, String quantity) {
         this.serialNumber = serialNumber;
