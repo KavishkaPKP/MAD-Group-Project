@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -38,8 +39,8 @@
             android:layout_below="@+id/teStockOwner"
             android:layout_toRightOf="@+id/imgStableImage"
             android:text="@string/txtWarehouseLocation"
-            android:textColor="@color/txtViewColore"
-            android:textSize="19sp"
+            android:textColor="@color/black"
+            android:textSize="15sp"
             android:textStyle="bold"
             android:layout_marginLeft="10dp"/>
 
@@ -55,21 +56,23 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
                 android:layout_marginEnd="5dp"
-                android:background="@color/btnColor"
                 android:text="@string/btnRetEdit"
                 android:textAllCaps="false"
-                android:textColor="#311B92" />
+                android:background="@drawable/rounded"
+                android:textColor="#FFFF"
+                tools:ignore="TextContrastCheck" />
 
             <Button
+                android:background="@drawable/rounded"
                 android:id="@+id/btnStockRemove"
                 android:layout_width="173dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="5dp"
                 android:layout_marginTop="15dp"
-                android:background="@color/btnColor"
                 android:text="@string/btnRetRemove"
                 android:textAllCaps="false"
-                android:textColor="#311B92" />
+                android:textColor="#FFFF"
+                tools:ignore="TextContrastCheck" />
 
         </LinearLayout>
     </RelativeLayout>

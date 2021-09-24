@@ -8,5 +8,6 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="txtViewColore">#38a9d9</color>
-    <color name="btnColor">#38a9d9</color>
+    <color name="btnRemove">#de4d43</color>
+    <color name="btnEdit">#298a3b</color>
 </resources>

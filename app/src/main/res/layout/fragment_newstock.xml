@@ -33,66 +33,79 @@
         <EditText
             android:id="@+id/txtSerialNumber"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="45dp"
             android:layout_below="@id/txtTitle1"
             android:layout_marginLeft="@dimen/txtmarginLeftsize"
             android:layout_marginTop="20dp"
             android:layout_marginRight="@dimen/txtmarginRightsize"
             android:hint="@string/inventory_serial"
+            android:gravity="center"
+            android:background="@drawable/rounded"
             tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
 
         <EditText
             android:id="@+id/txtStockOwner"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="45dp"
             android:layout_below="@+id/txtSerialNumber"
             android:layout_marginLeft="15dp"
             android:layout_marginTop="10dp"
             android:layout_marginRight="15dp"
             android:hint="@string/stock_owner"
+            android:gravity="center"
+            android:background="@drawable/rounded"
             tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
 
         <EditText
             android:id="@+id/txtWarehouseLocation"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="45dp"
             android:layout_below="@+id/txtStockOwner"
             android:layout_marginLeft="15dp"
             android:layout_marginTop="10dp"
             android:layout_marginRight="15dp"
+            android:gravity="center"
             android:hint="@string/txtWarehouseLocation"
+            android:background="@drawable/rounded"
             tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
 
         <EditText
             android:id="@+id/txtInsideStock"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="45dp"
             android:layout_below="@+id/txtWarehouseLocation"
             android:layout_marginLeft="15dp"
             android:layout_marginTop="10dp"
             android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:background="@drawable/rounded"
             android:hint="@string/txtInsideStock"
             tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
 
         <EditText
             android:id="@+id/txtPrice"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="45dp"
             android:layout_below="@+id/txtInsideStock"
             android:layout_marginLeft="15dp"
             android:layout_marginTop="10dp"
+            android:gravity="center"
             android:layout_marginRight="15dp"
+            android:background="@drawable/rounded"
             android:hint="@string/txtprice"
             tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
 
         <EditText
             android:id="@+id/txtQuantity"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="45dp"
             android:layout_below="@+id/txtPrice"
             android:layout_marginLeft="15dp"
             android:layout_marginTop="10dp"
             android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:background="@drawable/rounded"
             android:hint="@string/txtquantity"
             tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
 
@@ -104,7 +117,8 @@
             android:layout_marginLeft="15dp"
             android:layout_marginTop="50dp"
             android:layout_marginRight="15dp"
-            android:background="@color/btnColor"
+            android:background="@drawable/rounded"
+            android:textAllCaps="false"
             android:text="@string/btnAddToStock"
             android:textColor="#FFF"
             tools:ignore="TextContrastCheck" />

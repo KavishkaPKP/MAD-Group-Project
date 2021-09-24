@@ -24,5 +24,6 @@
     <string name="txtquantity">Quantity</string>
     <string name="btnRetEdit">Edit</string>
     <string name="btnRetRemove">Remove</string>
+    <string name="tvUpdateDetails">Update Details</string>
 
 </resources>
