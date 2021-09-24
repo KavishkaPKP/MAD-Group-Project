@@ -18,7 +18,7 @@ public class MainMenu extends AppCompatActivity implements View.OnClickListener{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_menu);
 
-        //action bar hide onli this screen
+        //action bar hide only this screen
         getSupportActionBar().hide();
 
         inventory = (CardView) findViewById(R.id.inventory);

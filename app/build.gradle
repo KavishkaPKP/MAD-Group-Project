@@ -43,7 +43,9 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
     implementation platform('com.google.firebase:firebase-bom:28.4.1')
     implementation'com.google.firebase:firebase-database'
-    implementation "com.firebaseui:firebase-ui-firestore:7.1.1"
+
+
+
     implementation 'com.firebaseui:firebase-ui-database:8.0.0'
 
 }

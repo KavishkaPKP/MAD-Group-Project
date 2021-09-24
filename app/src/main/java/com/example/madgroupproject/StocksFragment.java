@@ -1,6 +1,7 @@
 package com.example.madgroupproject;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,33 +15,60 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.firebase.ui.database.FirebaseRecyclerOptions;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 
 public class StocksFragment extends Fragment {
 
-    private RecyclerView recyclerView;
-    MainAdapter mainAdapter;
+    RecyclerView recview;
+    MainAdapter1 mainAdapter1;
+    FirebaseRecyclerOptions<Stocks> options ;
+
+    private String serialNumber;
+    private String StockOwner;
+    private String WarehouseLocation;
+    private String InsideStock;
+    private String Price;
+    private String Quantity;
 
 
+    public StocksFragment() {
+
+    }
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View i= inflater.inflate(R.layout.fragment_stocks, container, false);
 
-        recyclerView = i.findViewById(R.id.recyStock);
-        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this.getActivity());
+        View view=inflater.inflate(R.layout.fragment_stocks, container, false);
+
+        recview=(RecyclerView)view.findViewById(R.id.recyStock);
+        recview.setLayoutManager(new LinearLayoutManager(getContext()));
 
         FirebaseRecyclerOptions<Stocks> options =
                 new FirebaseRecyclerOptions.Builder<Stocks>()
                         .setQuery(FirebaseDatabase.getInstance().getReference().child("Stocks"), Stocks.class)
                         .build();
 
+        mainAdapter1=new MainAdapter1(options);
+        recview.setAdapter(mainAdapter1);
+        Log.d("myTag", "ssssssssfffffffffffffff");
+        return view;
+    }
 
-        mainAdapter  = new MainAdapter(options);
-        recyclerView.setAdapter(mainAdapter);
+    @Override
+    public void onStart() {
+        super.onStart();
+        mainAdapter1.startListening();
+        Log.d("myTag", "ssssssssssssss");
+    }
 
-
-        return i;
+    @Override
+    public void onStop() {
+        super.onStop();
+        mainAdapter1.stopListening();
     }
 }

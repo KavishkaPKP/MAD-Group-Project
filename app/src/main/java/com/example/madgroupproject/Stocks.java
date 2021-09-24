@@ -1,6 +1,7 @@
 package com.example.madgroupproject;
 
-public class Stocks {
+public class
+Stocks {
     private String serialNumber;
     private String StockOwner;
     private String WarehouseLocation;
@@ -8,6 +9,10 @@ public class Stocks {
     private String Price;
     private String Quantity;
 
+
+    public Stocks(){
+
+    }
 
 
     public Stocks(String serialNumber, String stockOwner, String warehouseLocation, String insideStock, String price, String quantity) {
