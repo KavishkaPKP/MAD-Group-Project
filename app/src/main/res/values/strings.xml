@@ -25,5 +25,16 @@
     <string name="btnRetEdit">Edit</string>
     <string name="btnRetRemove">Remove</string>
     <string name="tvUpdateDetails">Update Details</string>
+    <string name="login">Login</string>
+    <string name="signup">Signup</string>
+    <string name="location_access_permissions">location_access_permissions</string>
+    <string name="logout">LOGOUT</string>
+    <string name="disable_account">Disble Account</string>
+    <string name="main_functions">Main Functions</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="add_user">Add User</string>
+    <string name="users">Users</string>
+    <string name="groups">Groups</string>
+    <string name="quick_actions">Quick Action</string>
 
 </resources>
