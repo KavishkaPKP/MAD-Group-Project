@@ -28,6 +28,7 @@ public class MainMenu extends AppCompatActivity implements View.OnClickListener{
 
         inventory.setOnClickListener(this);
         warehouse.setOnClickListener(this);
+        settings.setOnClickListener(this);
 
     }
 
