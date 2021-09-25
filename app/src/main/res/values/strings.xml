@@ -31,7 +31,7 @@
     <string name="logout">LOGOUT</string>
     <string name="disable_account">Disble Account</string>
     <string name="main_functions">Main Functions</string>
-    <string name="reset_password">Reset Password</string>
+    <string name="reset_password">Reset Password </string>
     <string name="add_user">Add User</string>
     <string name="users">Users </string>
     <string name="groups">Groups</string>
