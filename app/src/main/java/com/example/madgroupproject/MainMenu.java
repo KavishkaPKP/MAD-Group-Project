@@ -45,6 +45,11 @@ public class MainMenu extends AppCompatActivity implements View.OnClickListener{
                 i = new Intent(this,WareHouse.class);
                 startActivity(i);
                 break;
+
+            case R.id.settings:
+                i = new Intent(this,SettingActivity.class);
+                startActivity(i);
+                break;
         }
     }
 
