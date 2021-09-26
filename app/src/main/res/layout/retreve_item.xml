@@ -20,14 +20,15 @@
             android:layout_width="77dp"
             android:layout_height="59dp"
 
-            android:src="@drawable/w" />
+            android:src="@drawable/w"
+            android:contentDescription="TODO" />
 
         <TextView
             android:id="@+id/teStockOwner"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_toRightOf="@+id/imgStableImage"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/imgStableImage"
             android:text="@string/stock_owner"
             android:textColor="@color/txtViewColore"
             android:textSize="20sp"
@@ -37,12 +38,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/teStockOwner"
-            android:layout_toRightOf="@+id/imgStableImage"
+            android:layout_toEndOf="@+id/imgStableImage"
             android:text="@string/txtWarehouseLocation"
             android:textColor="@color/black"
             android:textSize="15sp"
             android:textStyle="bold"
-            android:layout_marginLeft="10dp"/>
+            android:layout_marginStart="10dp"/>
 
         <LinearLayout
             android:layout_below="@id/teWarehouseLocation"
@@ -53,26 +54,27 @@
             <Button
                 android:id="@+id/btnStockEdit"
                 android:layout_width="173dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginEnd="5dp"
+                android:background="@drawable/rounded"
                 android:text="@string/btnRetEdit"
                 android:textAllCaps="false"
-                android:background="@drawable/rounded"
                 android:textColor="#FFFF"
-                tools:ignore="TextContrastCheck" />
+                tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
 
             <Button
-                android:background="@drawable/rounded"
                 android:id="@+id/btnStockRemove"
                 android:layout_width="173dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="5dp"
-                android:layout_marginTop="15dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rounded"
                 android:text="@string/btnRetRemove"
                 android:textAllCaps="false"
                 android:textColor="#FFFF"
-                tools:ignore="TextContrastCheck" />
+                tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
 
         </LinearLayout>
     </RelativeLayout>

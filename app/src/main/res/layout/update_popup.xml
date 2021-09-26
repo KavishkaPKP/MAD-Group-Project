@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -8,11 +9,12 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:text="@string/tvUpdateDetails"
         android:background="#0faad1"
-        android:textSize="25dp"
         android:gravity="center"
-        android:textColor="#FFFFFF"/>
+        android:text="@string/tvUpdateDetails"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        tools:ignore="TextContrastCheck" />
 
     <TextView
         android:layout_width="match_parent"
@@ -23,14 +25,18 @@
         android:layout_marginBottom="5dp"
         android:text="@string/txtprice"
         />
+
     <EditText
+        android:id="@+id/txtPrice"
         android:layout_width="match_parent"
         android:layout_height="35dp"
+        android:layout_gravity="center"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:background="@drawable/rounded"
-        android:layout_gravity="center"
-        android:id="@+id/txtPrice"/>
+        android:gravity="center"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"
+        android:inputType="textPersonName" />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -40,14 +46,18 @@
         android:layout_marginBottom="5dp"
         android:text="@string/txtWarehouseLocation"
         />
+
     <EditText
+        android:id="@+id/txtWarehouseLocation"
         android:layout_width="match_parent"
         android:layout_height="35dp"
+        android:layout_gravity="center"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:background="@drawable/rounded"
-        android:layout_gravity="center"
-        android:id="@+id/txtWarehouseLocation"/>
+        android:gravity="center"
+        android:inputType="textPersonName"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -57,28 +67,34 @@
         android:layout_marginBottom="5dp"
         android:text="@string/stock_owner"
         />
+
     <EditText
+        android:id="@+id/txtStockOwner"
         android:layout_width="match_parent"
         android:layout_height="35dp"
+        android:layout_gravity="center"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:background="@drawable/rounded"
-        android:layout_gravity="center"
-        android:id="@+id/txtStockOwner"/>
+        android:gravity="center"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"
+        android:inputType="textPersonName" />
+
 
     <Button
+        android:id="@+id/btnUpdate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/tvUpdateDetails"
         android:layout_marginLeft="25dp"
-        android:layout_marginRight="25dp"
         android:layout_marginTop="10dp"
-        android:textSize="21dp"
-        android:textColor="#FFF"
-        android:textAllCaps="false"
+        android:layout_marginRight="25dp"
         android:background="@drawable/rounded"
         android:gravity="center"
-        android:id="@+id/btnUpdate"/>
+        android:text="@string/tvUpdateDetails"
+        android:textAllCaps="false"
+        android:textColor="#FFF"
+        android:textSize="21sp"
+        tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck" />
 
 
 

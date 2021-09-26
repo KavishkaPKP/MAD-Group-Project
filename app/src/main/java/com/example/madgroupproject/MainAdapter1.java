@@ -51,32 +51,22 @@ public class MainAdapter1 extends FirebaseRecyclerAdapter<Stocks,MainAdapter1.my
                         .setContentHolder(new ViewHolder(R.layout.update_popup))
                         .setExpanded(true,1200)
                         .create();
-
-
-
                 View view = dialogPlus.getHolderView();
-
                 EditText price = view.findViewById(R.id.txtPrice);
                 EditText WarehouseLocation = view.findViewById(R.id.txtWarehouseLocation);
                 EditText StockOwner = view.findViewById(R.id.txtStockOwner);
-
                 Button btnUpdate = view.findViewById(R.id.btnUpdate);
-
                 price.setText(model.getPrice());
                 WarehouseLocation.setText(model.getWarehouseLocation());
                 StockOwner.setText(model.getStockOwner());
-
                 dialogPlus.show();
-
                 btnUpdate.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-
                         Map<String,Object> map =new  HashMap<>();
                         map.put("price",price.getText().toString());
                         map.put("warehouseLocation",WarehouseLocation.getText().toString());
                         map.put("stockOwner",StockOwner.getText().toString());
-
                         FirebaseDatabase.getInstance().getReference().child("Stocks")
                                 .child(getRef(position).getKey()).updateChildren(map)
                                 .addOnSuccessListener(new OnSuccessListener<Void>() {
@@ -85,12 +75,10 @@ public class MainAdapter1 extends FirebaseRecyclerAdapter<Stocks,MainAdapter1.my
 
                                         Toast.makeText(holder.StockOwner.getContext(), "Updated Successfully", Toast.LENGTH_SHORT).show();
                                         dialogPlus.dismiss();
-                                        
                                     }
                                 }).addOnFailureListener(new OnFailureListener() {
                             @Override
                             public void onFailure(@NonNull Exception e) {
-
                                 Toast.makeText(holder.StockOwner.getContext(), "Error While Updating.", Toast.LENGTH_SHORT).show();
                                 dialogPlus.dismiss();
                             }

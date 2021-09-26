@@ -15,12 +15,10 @@ import androidx.fragment.app.Fragment;
 
 public class  NewstockFragment extends Fragment {
 
-
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_newstock, container, false);
-
         final EditText  serialNumber = v.findViewById(R.id.txtSerialNumber);
         final EditText  StockOwner = v.findViewById(R.id.txtStockOwner);
         final EditText  WarehouseLocation = v.findViewById(R.id.txtWarehouseLocation);
@@ -29,11 +27,8 @@ public class  NewstockFragment extends Fragment {
         final EditText  Quantity= v.findViewById(R.id.txtQuantity);
         Button btn = v.findViewById(R.id.btnAddItem);
         DAOStocks dao = new DAOStocks();
-
         btn.setOnClickListener(b-> {
-
 //            Add data to the Database
-
             Stocks st = new Stocks(serialNumber.getText().toString(), StockOwner.getText().toString(), WarehouseLocation.getText().toString(), InsideStock.getText().toString(), Price.getText().toString(), Quantity.getText().toString());
             dao.add(st).addOnSuccessListener(V -> Toast.makeText(this.getContext(), "Add To Recode Successfully", Toast.LENGTH_SHORT).show()).addOnFailureListener(er -> Toast.makeText(this.getContext(), "Faild-" + er.getMessage(), Toast.LENGTH_SHORT).show());
 

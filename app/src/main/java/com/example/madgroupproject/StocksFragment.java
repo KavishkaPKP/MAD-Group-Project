@@ -55,7 +55,7 @@ public class StocksFragment extends Fragment {
 
         mainAdapter1 = new MainAdapter1(options);
         recview.setAdapter(mainAdapter1);
-        Log.d("myTag", "ssssssssfffffffffffffff");
+        Log.d("myTag", "");
         return view;
     }
 
@@ -63,7 +63,7 @@ public class StocksFragment extends Fragment {
     public void onStart() {
         super.onStart();
         mainAdapter1.startListening();
-        Log.d("myTag", "ssssssssssssss");
+        Log.d("myTag", "");
     }
 
     @Override
