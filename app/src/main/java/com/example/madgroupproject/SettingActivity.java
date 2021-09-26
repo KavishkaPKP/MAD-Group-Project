@@ -96,7 +96,6 @@ public class SettingActivity extends AppCompatActivity {
         });
 
     }
-
     public void onClick(View view) {
     }
 }
