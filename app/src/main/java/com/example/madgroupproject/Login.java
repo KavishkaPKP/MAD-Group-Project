@@ -80,7 +80,6 @@ public class Login extends AppCompatActivity {
                 }
             }
 
-
         });
 
         btnSignup.setOnClickListener(new View.OnClickListener() {
@@ -121,7 +120,6 @@ public class Login extends AppCompatActivity {
 
                     }
                 });
-
                 passwordResetDialog.setNegativeButton("No", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
@@ -130,7 +128,6 @@ public class Login extends AppCompatActivity {
                 });
 
                 passwordResetDialog.create().show();
-
             }
         });
 
