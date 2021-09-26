@@ -103,29 +103,30 @@
 
     <TextView
         android:id="@+id/alredyUser"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Already An User ?"
+        android:layout_width="148dp"
+        android:layout_height="25dp"
+        android:text="Already have account ?"
         android:textColor="@color/teal_700"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.322"
+        app:layout_constraintHorizontal_bias="0.239"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.94" />
+        app:layout_constraintVertical_bias="0.944" />
 
     <TextView
         android:id="@+id/loginTV"
-        android:layout_width="45dp"
-        android:layout_height="24dp"
+        android:layout_width="49dp"
+        android:layout_height="23dp"
         android:text="Login"
+        android:textStyle="bold"
         android:textAlignment="center"
         android:textColor="@color/purple_700"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.603"
+        app:layout_constraintHorizontal_bias="0.582"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.946" />
+        app:layout_constraintVertical_bias="0.943" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
